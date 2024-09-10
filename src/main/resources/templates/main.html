@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <!-- 채팅방 목록 -->
+    <div class="chat-room-list">
+        <h2>채팅방 목록</h2>
+        <ul id="roomList">
+            <!-- 동적으로 채팅방 목록이 추가됩니다 -->
+        </ul>
+    </div>
+
+    <!-- 채팅 화면 -->
+    <div class="chat-room">
+        <h2 id="chatRoomTitle">채팅방</h2>
+        <div id="chatContent" class="chat-content">
+            <!-- 채팅 내용이 여기에 표시됩니다 -->
+        </div>
+        <form id="chatForm">
+            <input type="text" id="messageInput" placeholder="메시지를 입력하세요..." required>
+            <button type="submit">전송</button>
+        </form>
+    </div>
+</div>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
